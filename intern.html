@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internships - Jogi Praveen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+        }
+        nav {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .section__text__p1 {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .title {
+            font-size: 36px;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .experience-details-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .details-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .details-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .details-container .more-details {
+            display: none;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .details-container img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .project-title {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #2980b9;
+        }
+        .details-container p {
+            font-size: 16px;
+            color: #666;
+        }
+        .details-container button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .details-container button:hover {
+            background-color: #1f618d;
+        }
+        .details-container ul {
+            padding-left: 20px;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        }
+        .details-container ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jogi Praveen</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="internships.html">Internships</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="internships">
+        <p class="section__text__p1"><h>My Professional</h</p>
+        <h1 class="title">Internships</h1>
+        <div class="experience-details-container">
+            <!-- Brainmeasures Internship -->
+            <div class="details-container">
+                <img src="assets/download.jpeg" alt="Brainmeasures" class="project-img" />
+                <h2 class="project-title">Brainmeasures</h2>
+                <p>March 2024 – Present</p>
+                <button onclick="toggleDetails('brainmeasures-details')">More</button>
+                <div id="brainmeasures-details" class="more-details">
+                    <ul>
+                        <li>Developed AI applications using OpenAI and Langchain, automating question and content generation to enhance educational services.</li>
+                        <li>Architected scalable solutions for content creation leveraging advanced language models.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- United We Care Internship -->
+            <div class="details-container">
+                <img src="C:\Users\jogip\Desktop\portfolio\html-css-js-portfolio-tutorial-2\assets\unitedwecare.png" alt="United We Care" class="project-img" />
+                <h2 class="project-title">United We Care</h2>
+                <p>April 2024</p>
+                <button onclick="toggleDetails('unitedwecare-details')">More</button>
+                <div id="unitedwecare-details" class="more-details">
+                    <ul>
+                        <li>Optimized data integration solutions with Neo4j for health data applications.</li>
+                        <li>Improved data processing efficiency with Docker workflows.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Zymbia Interactive Technologies Internship -->
+            <div class="details-container">
+                <img src="./assets/carpm.png" alt="Zymbia Interactive Technologies" class="project-img" />
+                <h2 class="project-title">Zymbia Interactive Technologies</h2>
+                <p>February 2024</p>
+                <button onclick="toggleDetails('zymbia-details')">More</button>
+                <div id="zymbia-details" class="more-details">
+                    <ul>
+                        <li>Enhanced chatbot performance using OpenAI API and advanced prompting techniques.</li>
+                        <li>Implemented an Interactive chatbot interface with Streamlit.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- WebMobi360 Internship -->
+            <div class="details-container">
+                <img src="C:\Users\jogip\Desktop\portfolio\html-css-js-portfolio-tutorial-2\assets\webmobi.jpeg" alt="WebMobi360" class="project-img" />
+                <h2 class="project-title">WebMobi360</h2>
+                <p>September 2023 – December 2023</p>
+                <button onclick="toggleDetails('webmobi360-details')">More</button>
+                <div id="webmobi360-details" class="more-details">
+                    <ul>
+                        <li>Developed a face emotion recognition system using advanced computer vision techniques.</li>
+                        <li>Created responsive software solutions to improve user interaction.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Nanak Delight Internship -->
+            <div class="details-container">
+                <img src="./assets/nanak" alt="Nanak Delight" class="project-img" />
+                <h2 class="project-title">Nanak Delight</h2>
+                <p>October 2023 – December 2023</p>
+                <button onclick="toggleDetails('nanakdelight-details')">More</button>
+                <div id="nanakdelight-details" class="more-details">
+                    <ul>
+                        <li>Analyzed and managed datasets related to exports and imports, ensuring data accuracy and compliance with industry standards.</li>
+                        <li>Developed data analysis tools to extract meaningful insights, contributing to informed decision-making in the exports and imports domain.</li>
+                        <li>Optimized data workflows, improving efficiency by 60% to support data-driven strategies for exports and imports operations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Reflexion.ai Internship -->
+            <div class="details-container">
+                <img src="./assets/reflexion.ai" alt="Reflexion.ai" class="project-img" />
+                <h2 class="project-title">Reflexion.ai</h2>
+                <p>September 2023 – December 2023</p>
+                <button onclick="toggleDetails('reflexionai-details')">More</button>
+                <div id="reflexionai-details" class="more-details">
+                    <ul>
+                        <li>Managed and curated labeled datasets for AI training purposes, ensuring data accuracy to project requirements.</li>
+                        <li>Developed an efficient data annotation tool, facilitating seamless data labeling for AI models.</li>
+                        <li>Optimized data annotation workflows, improving efficiency by 60% to support AI model training.</li>
+                        <li>Proficient in leveraging tools and techniques for preprocessing and analyzing large-scale datasets.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
