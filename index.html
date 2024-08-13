@@ -1,355 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Jogi Praveen</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="intern.html">Experience</a></li>
-        </ul>
-      </div>
-      
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Jogi Praveen</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="intern.html" onclick="toggleMenu()">Experience</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/photo.jpg" alt="Jogi Praveen profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Jogi Praveen</h1>
-        <p class="section__text__p2">Junior AI Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-             onclick="window.open('https://drive.google.com/file/d/1GfFOKHGhuIZmpVRo7eOZeLo5-m1mHiso/view?usp=drive_link')">
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/jogi-praveen-8a23b2238/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/praveen9131'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/photo.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Artificial intelligence developer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor of Technology<br />Artificial intelligence and Data Science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Experienced Junior data scientist with a strong background in statistical analysis, machine learning,
-              and data-driven decision-making. Proven track record of developing innovative solutions to complex business problems,
-              utilizing advanced programming skills and expertise in data visualization
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend  Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Neo4j</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Machine Learning</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Deep Learning</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">AI Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Langchain</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Laama Index</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Openai,Gemini,Llama</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-      <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img src="./assets/questions.webp" alt="Project 1" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">AI questions generation with Openai API</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Praveen9131/AI_Questions_generation'">
-                  Github
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img src="./assets/chatbot.webp" alt="Project 2" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">chatbot project</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Praveen9131/chatbot_02'">
-                  Github
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img src="./assets/content.webp" alt="Project 3" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">Content generation </h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Praveen9131/content-_generator'">
-                  Github
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-      </section>
-              <section id="contact">
-          <p class="section_text_p1">Get in Touch</p>
-          <h1 class="title">Contact Me</h1>
-          <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-              <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-              />
-              <p><a href="mailto:jogipraveen9122@gmail.com">jogipraveen9122@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-              <img
-                src="./assets/linkedin.png"
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-              />
-              <p><a href="https://www.linkedin.com/in/jogi-praveen-8a23b2238/">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-              <img
-                src="./assets/dail_logo.jpg"
-                alt="Phone icon"
-                class="icon contact-icon"
-              />
-              <p><a href="tel:+919121564760">9121564760</a></p>
-            </div>
-            <div class="contact-info-container">
-              <img
-                src="./assets/whatsapp.png"
-                alt="Phone icon"
-                class="icon contact-icon"
-              />
-              <p><a href="https://wa.me/9121564760">whatsapp me</a></p>
-            </div>
-          </div>
-        </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen's Portfolio</title>
+    <style>
+        /* GENERAL STYLES */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            color: #333; /* Darker text color for better contrast */
+            background-color: #f0f0f0; /* Lighter background for better contrast */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        a {
+            color: #333; /* Darker color for links */
+            text-decoration: none;
+            transition: all 300ms ease;
+        }
+        a:hover {
+            color: #555; /* Darker gray on hover */
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            text-decoration-color: #bbb; /* Lighter underline color */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007bff; /* Blue button background */
+            color: #fff; /* White text for buttons */
+            text-align: center;
+            margin-top: 10px;
+            transition: background-color 300ms ease;
+        }
+        .btn.primary-btn {
+            background-color: #333; /* Darker primary button */
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .icon {
+            height: 40px;
+            width: 40px;
+        }
+        h1, h2, h3 {
+            color: #000; /* Black color for all headings */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav style="
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 17vh;
+        background-color: #ffffff; /* White background for navigation */
+    ">
+        <div class="logo" style="font-size: 2rem;">Jogi Praveen</div>
+        <ul class="nav-links" style="
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            font-size: 1.5rem;
+        ">
             <li><a href="#about">About</a></li>
-            
-            <li><a href="intern.html">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
-            
-          </ul>
+        </ul>
+    </nav>
+
+<!-- Profile Section -->
+<section id="profile" style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 80vh;
+    flex-wrap: wrap;
+    padding: 4vh 0;
+    background-color: #f9f9f9; /* Slightly darker background for profile section */
+">
+    <div class="profile-container" style="display: flex; align-items: center;">
+        <img src="assets/photo.jpg" alt="Jogi Praveen" class="profile-img" style="
+            height: 400px;
+            width: 300px;
+            border-radius: 1rem;
+            object-fit: cover;
+            margin-right: 40px;
+        ">
+        <div class="profile-text" style="text-align: left;">
+            <p style="font-weight: 600;">Hello, I'm</p>
+            <h1 style="font-size: 2.5rem; font-weight: bold;">Jogi Praveen</h1>
+            <p style="font-size: 1.75rem; margin-bottom: 1rem; color: #444;">Junior AI Developer</p>
+            <div class="profile-buttons" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                <a href="https://drive.google.com/file/d/1GfFOKHGhuIZmpVRo7eOZeLo5-m1mHiso/view?usp=drive_link" class="btn" style="
+                    padding: 10px 20px;
+                    border: 2px solid #333; /* Dark border for contrast */
+                    background-color: #fff; /* White background for contrast */
+                    color: #333; /* Dark text color */
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    transition: all 0.3s ease;
+                ">Download CV</a>
+                <a href="#contact" class="btn primary-btn" style="
+                    padding: 10px 20px;
+                    background-color: #333;
+                    color: white;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    transition: all 0.3s ease;
+                ">Contact Info</a>
+            </div>
+            <div class="social-icons" style="margin-top: 1rem; display: flex; gap: 1rem;">
+                <a href="https://linkedin.com/in/jogi-praveen-8a23b2238/" class="icon-link"><img src="assets/linkedin.png" alt="LinkedIn" class="icon"></a>
+                <a href="https://github.com/praveen9131" class="icon-link"><img src="assets/github.png" alt="GitHub" class="icon"></a>
+            </div>
+            <div style="margin-top: 3rem;">
+                <a href="#contact" class="btn hire-me-btn" style="
+                    padding: 10px 20px;
+                    border: 2px solid #333;
+                    background-color: #000; /* Black background for Hire Me button */
+                    color: white;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    display: inline-block;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                ">
+                    Hire Me
+                    <span style="
+                        display: inline-block;
+                        margin-left: 100px;
+                        transition: transform 0.3s ease;
+                    ">&rarr;</span>
+                </a>
+            </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 Jogi Praveen. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+</section>
+
+<script>
+    document.querySelector('.hire-me-btn').addEventListener('mouseenter', function() {
+        this.querySelector('span').style.transform = 'translateX(5px)';
+    });
+
+    document.querySelector('.hire-me-btn').addEventListener('mouseleave', function() {
+        this.querySelector('span').style.transform = 'translateX(0)';
+    });
+</script>
+
+<!-- About Me Section -->
+<section id="about" style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4vh 0;
+    background-color: #f9f9f9;
+">
+    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Get To Know More</h2>
+    <div class="about-container" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    ">
+        <!-- Profile Image -->
+        <div class="profile-image" style="flex: 1; text-align: center;">
+            <img src="assets/photo.jpg" alt="Jogi Praveen" style="
+                height: 300px;
+                width: 250px;
+                border-radius: 1rem;
+                object-fit: cover;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            ">
+        </div>
+
+        <!-- Profile Details -->
+        <div class="profile-details" style="flex: 2; text-align: left;">
+            <h2 style="font-size: 2rem; color: #000;">Jogi Praveen</h2>
+            <div class="experience-education" style="
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+            ">
+                <div class="experience" style="
+                    padding: 1.5rem;
+                    background: white;
+                    border-radius: 1rem;
+                    border: #bbb 0.1rem solid; /* Lighter border */
+                    width: 45%;
+                ">
+                    <img src="assets/experience.png" alt="Experience" style="height: 50px; margin-bottom: -0.1rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.1rem;">Experience</h3>
+                    <p>2+ years <br />Artificial Intelligence Developer</p>
+                </div>
+                <div class="education" style="
+                    padding: 1.5rem;
+                    background: white;
+                    border-radius: 1rem;
+                    border: #bbb 0.1rem solid;
+                    width: 45%;
+                ">
+                    <img src="assets/education.png" alt="Education" style="height: 50px; margin-bottom: -0.1rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.1rem;">Education</h3>
+                    <p>Bachelor of Technology<br />Artificial Intelligence and Data Science</p>
+                </div>
+            </div>
+            <p style="
+                max-width: 800px;
+                margin-top: 2rem;
+                line-height: 1.6;
+            ">
+                Experienced Junior data scientist with a strong background in statistical analysis, machine learning, 
+                and data-driven decision-making. Proven track record of developing innovative solutions to complex 
+                business problems, utilizing advanced programming skills and expertise in data visualization.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" style="
+    padding: 4vh 0;
+    background-color: #ffffff;
+    text-align: center;
+">
+    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Explore My Skills</h2>
+    <div class="skills-container" style="
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        margin: 0 auto;
+    ">
+        <div class="skills-item" style="
+            width: 45%;
+            padding: 2rem;
+            background: white;
+            border-radius: 1rem;
+            border: #ccc 0.1rem solid; /* Neutral border color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        ">
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Backend Development</h3>
+            <ul style="
+                padding-left: 0;
+                font-size: 1.2rem;
+                list-style: none;
+                margin: 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            ">
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>Python</strong><br>
+                        <span style="color: #666;">Experienced</span>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>MySQL</strong><br>
+                        <span style="color: #666;">Experienced</span>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>MongoDB</strong><br>
+                        <span style="color: #666;">Intermediate</span>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>Neo4j</strong><br>
+                        <span style="color: #666;">Experienced</span>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>Machine Learning</strong><br>
+                        <span style="color: #666;">Experienced</span>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>Deep Learning</strong><br>
+                        <span style="color: #666;">Intermediate</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="skills-item" style="
+            width: 45%;
+            padding: 2rem;
+            background: white;
+            border-radius: 1rem;
+            border: #ccc 0.1rem solid;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        ">
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">AI Development</h3>
+            <ul style="
+                padding-left: 0;
+                font-size: 1.2rem;
+                list-style: none;
+                margin: 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            ">
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>Langchain</strong><br>
+                        <span style="color: #666;">Experienced</span>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>Llama Index</strong><br>
+                        <span style="color: #666;">Intermediate</span>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>OpenAI, Gemini</strong><br>
+                        <span style="color: #666;">Experienced</span>
+                    </div>
+                </li>
+                <li style="display: flex; align-items: flex-start;">
+                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                    <div>
+                        <strong>Git</strong><br>
+                        <span style="color: #666;">Experienced</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" style="
+    padding: 4vh 0;
+    background-color: #f9f9f9;
+    text-align: center;
+">
+    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Browse My Recent Projects</h2>
+    <div class="projects-container" style="
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        margin: 0 auto;
+    ">
+        <div class="project-item" style="
+            width: 30%;
+            padding: 20px;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        ">
+            <img src="assets/questions.webp" alt="AI Questions Generation" style="
+                border-radius: 1rem;
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            ">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">AI Questions Generation</h3>
+            <a href="https://github.com/Praveen9131/AI_Questions_generation" class="btn">GitHub</a>
+        </div>
+        <div class="project-item" style="
+            width: 30%;
+            padding: 20px;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        ">
+            <img src="assets/chatbot.webp" alt="Chatbot Project" style="
+                border-radius: 1rem;
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            ">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Chatbot Project</h3>
+            <a href="https://github.com/Praveen9131/chatbot_02" class="btn">GitHub</a>
+        </div>
+        <div class="project-item" style="
+            width: 30%;
+            padding: 20px;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        ">
+            <img src="assets/content.webp" alt="Content Generation" style="
+                border-radius: 1rem;
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            ">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Content Generation</h3>
+            <a href="https://github.com/Praveen9131/content-_generator" class="btn">GitHub</a>
+        </div>
+        <div class="project-item" style="
+        width: 30%;
+        padding: 20px;
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    ">
+        <img src="assets/content.webp" alt="Content Generation" style="
+            border-radius: 1rem;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        ">
+        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Content Generation</h3>
+        <a href="https://github.com/Praveen9131/content-_generator" class="btn">GitHub</a>
+    </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" style="
+    padding: 4vh 0;
+    background-color: #ffffff;
+    text-align: center;
+">
+    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">My Work Experience</h2>
+    <div class="experience-container" style="
+        max-width: 1200px;
+        display: flex;
+        gap: 2rem;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 2rem;
+    ">
+        <div class="experience-left" style="
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        ">
+            <div class="experience-item" style="
+                padding: 2rem;
+                background: white;
+                border-radius: 2rem;
+                border: #ccc 0.1rem solid;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: left;
+            ">
+                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">Brainmeasures</h3>
+                <p>March 2024 – Present</p>
+                <h3 style="color: #000;"><strong>Role:</strong> AI Developer Intern</h3>
+                <ul style="
+                    padding-left: 20px;
+                    list-style-type: disc;
+                ">
+                    <li>Developed AI applications using OpenAI and LangChain, enhancing educational services through automation.</li>
+                    <li>Architected scalable content creation solutions using advanced language models.</li>
+                </ul>
+            </div>
+            <div class="experience-item" style="
+                padding: 2rem;
+                background: white;
+                border-radius: 2rem;
+                border: #ccc 0.1rem solid;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: left;
+            ">
+                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">Zymbia Interactive Technologies</h3>
+                <p>February 2024</p>
+                <h3 style="color: black;"><strong>Role:</strong> Generative AI Intern</h3>
+                <ul style="
+                    padding-left: 20px;
+                    list-style-type: disc;
+                ">
+                    <li>Enhanced chatbot performance using OpenAI API and advanced prompting techniques.</li>
+                    <li>Implemented an interactive chatbot interface using Streamlit.</li>
+                </ul>
+            </div>
+            <div class="experience-item" style="
+                padding: 2rem;
+                background: white;
+                border-radius: 2rem;
+                border: #ccc 0.1rem solid;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: left;
+            ">
+                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">Nanak Delight</h3>
+                <p>October 2023 – December 2023</p>
+                <h3 style="color: black;"><strong>Role:</strong> Data Analyst Intern</h3>
+                <ul style="
+                    padding-left: 20px;
+                    list-style-type: disc;
+                ">
+                    <li>Analyzed and managed datasets related to exports and imports, ensuring data accuracy.</li>
+                    <li>Developed data analysis tools to extract meaningful insights for decision-making.</li>
+                    <li>Optimized data workflows, improving efficiency by 60% in exports and imports operations.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="vertical-line" style="
+            width: 2px;
+            background-color: #ccc;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        "></div>
+        <div class="experience-right" style="
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        ">
+            <div class="experience-item" style="
+                padding: 2rem;
+                background: white;
+                border-radius: 2rem;
+                border: #ccc 0.1rem solid;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: left;
+            ">
+                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">United We Care</h3>
+                <p>April 2024</p>
+                <h3 style="color: black;"><strong>Role:</strong> Data Science Intern</h3>
+                <ul style="
+                    padding-left: 20px;
+                    list-style-type: disc;
+                ">
+                    <li>Optimized data integration solutions with Neo4j for health data applications.</li>
+                    <li>Improved data processing efficiency using Docker workflows.</li>
+                </ul>
+            </div>
+            <div class="experience-item" style="
+                padding: 2rem;
+                background: white;
+                border-radius: 2rem;
+                border: #ccc 0.1rem solid;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: left;
+            ">
+                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">WebMobi360</h3>
+                <p>September 2023 – December 2023</p>
+                <h3 style="color: #000;"><strong>Role:</strong> Machine Learning Intern</h3>
+                <ul style="
+                    padding-left: 20px;
+                    list-style-type: disc;
+                ">
+                    <li>Developed a facial emotion recognition system using advanced computer vision techniques.</li>
+                    <li>Created responsive software solutions to improve user interaction.</li>
+                </ul>
+            </div>
+            <div class="experience-item" style="
+                padding: 2rem;
+                background: white;
+                border-radius: 2rem;
+                border: #ccc 0.1rem solid;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: left;
+            ">
+                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">Reflexion.ai</h3>
+                <p>September 2023 – December 2023</p>
+                <h3 style="color: black;"><strong>Role:</strong> Data Labelling Intern</h3>
+                <ul style="
+                    padding-left: 20px;
+                    list-style-type: disc;
+                ">
+                    <li>Managed and curated labeled datasets for AI training, ensuring accuracy and consistency.</li>
+                    <li>Developed an efficient data annotation tool, streamlining the data labeling process.</li>
+                    <li>Optimized data annotation workflows, improving efficiency by 60%.</li>
+                    <li>Proficient in preprocessing and analyzing large-scale datasets for AI models.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" style="
+    padding: 4vh 0;
+    background-color: #f9f9f9;
+    text-align: center;
+">
+    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Contact Me</h2>
+    <div class="contact-info-upper-container" style="
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+        border: #ccc 0.1rem solid;
+        background: #fefefe;
+        margin: 2rem auto;
+        padding: 0.5rem;
+        max-width: 1200px;
+    ">
+        <div class="contact-info-container" style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem;
+        ">
+            <img src="assets/email.png" alt="Email" class="contact-icon" style="height: 2.5rem;">
+            <p><a href="mailto:jogipraveen9122@gmail.com">jogipraveen9122@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container" style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem;
+        ">
+            <img src="assets/linkedin.png" alt="LinkedIn" class="contact-icon" style="height: 2.5rem;">
+            <p><a href="https://www.linkedin.com/in/jogi-praveen-8a23b2238/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container" style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem;
+        ">
+            <img src="assets/dail_logo.jpg" alt="Phone" class="contact-icon" style="height: 2.5rem;">
+            <p><a href="tel:+919121564760">9121564760</a></p>
+        </div>
+        <div class="contact-info-container" style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem;
+        ">
+            <img src="assets/whatsapp.png" alt="WhatsApp" class="contact-icon" style="height: 2.5rem;">
+            <p><a href="https://wa.me/919121564760">WhatsApp me</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="
+    height: 26vh;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+">
+    <nav>
+        <ul class="nav-links" style="
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            font-size: 1.5rem;
+        ">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <p>Copyright &#169; 2024 Jogi Praveen. All Rights Reserved.</p>
+</footer>
+
+</body>
 </html>
