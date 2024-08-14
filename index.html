@@ -11,687 +11,935 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            color: #333; /* Darker text color for better contrast */
-            background-color: #f0f0f0; /* Lighter background for better contrast */
+            color: #333;
+            background-color: #f0f0f0;
         }
+
         html {
             scroll-behavior: smooth;
         }
+
         a {
-            color: #333; /* Darker color for links */
+            color: #333;
             text-decoration: none;
             transition: all 300ms ease;
         }
+
         a:hover {
-            color: #555; /* Darker gray on hover */
+            color: #555;
             text-decoration: underline;
-            text-underline-offset: 1rem;
-            text-decoration-color: #bbb; /* Lighter underline color */
         }
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
             border-radius: 5px;
-            background-color: #007bff; /* Blue button background */
-            color: #fff; /* White text for buttons */
+            background-color: #ffb300;
+            color: #fff;
             text-align: center;
             margin-top: 10px;
             transition: background-color 300ms ease;
         }
+
         .btn.primary-btn {
-            background-color: #333; /* Darker primary button */
+            background-color: #333;
         }
+
         .btn:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #0d0d0d;
+            color: #f0f0f0;
         }
-        .icon {
-            height: 40px;
+
+        .icon, .contact-icon {
+            max-width: 100%;
+            height: auto;
             width: 40px;
         }
-        h1, h2, h3 {
-            color: #000; /* Black color for all headings */
+
+        /* PROFILE SECTION */
+#profile {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    max-width: 1200px;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-image img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text {
+    text-align: left;
+    flex: 1;
+}
+
+.profile-text p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.profile-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.role {
+    font-size: 1.75rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+.btn.primary-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.hire-me {
+    margin-top: 20px;
+}
+
+.hire-me-btn {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hire-me-btn:hover {
+    background-color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 250px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+
+    .profile-buttons {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+        /* NAVIGATION STYLES */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* PROFILE SECTION */
+        #profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .profile-text {
+            max-width: 600px;
+            text-align: left;
+        }
+/* ABOUT SECTION */
+#about {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-image img {
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    flex: 1;
+    text-align: left;
+}
+
+.profile-details h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.experience-education {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.experience, .education {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px;
+}
+
+.experience h4, .education h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.experience p, .education p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.experience img, .education img {
+    width: 40px;
+    height: 40px;
+}
+
+.profile-details p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .experience, .education {
+        margin: 10px 0;
+    }
+}
+
+
+        /* SKILLS SECTION */
+#skills {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    flex: 1 1 45%;
+    padding: 20px;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skills-item h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.skill strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.skill span {
+    color: #111111e6;
+}
+
+.skill-icon {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .skills-item {
+        flex: 1 1 100%;
+    }
+
+    .skill-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+        .skills-item {
+            flex: 1 1 45%;
+            padding: 20px;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+
+/* PROJECTS SECTION */
+#projects {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns in a row */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-item {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1200px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns in a row */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns in a row */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* One column in a row */
+    }
+}
+
+
+
+        /* EXPERIENCE SECTION */
+        #experience {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .experience-container {
+            max-width: 1200px;
+            display: flex;
+            gap: 2rem;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .experience-item {
+            flex: 1 1 45%;
+            padding: 20px;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        /* CONTACT SECTION */
+        #contact {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .contact-info-upper-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-radius: 1rem;
+            background: #fefefe;
+            margin: 2rem auto;
+            padding: 10px;
+            max-width: 1200px;
+        }
+
+        .contact-info-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px;
+        }
+ 
+
+        /* MEDIA QUERIES */
+        @media (max-width: 768px) {
+            .profile-img {
+                max-width: 200px;
+            }
+
+            .profile-text {
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .skills-item, .experience-item, .project-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-text h1 {
+                font-size: 2rem;
+            }
+
+            
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav style="
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 17vh;
-        background-color: #ffffff; /* White background for navigation */
-    ">
-        <div class="logo" style="font-size: 2rem;">Jogi Praveen</div>
-        <ul class="nav-links" style="
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            font-size: 1.5rem;
-        ">
+<!-- Navigation -->
+<!-- Navigation -->
+
+<nav>
+    <div class="logo">Jogi Praveen</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div id="hamburger-nav" class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        const menuLinks = document.querySelector('.menu-links');
+
+        hamburgerIcon.classList.toggle('open');
+        menuLinks.classList.toggle('open');
+    }
+
+</script>
+<style>
+    /* NAVIGATION */
+    nav,
+    .nav-links {
+        display: flex;
+    }
+
+    nav {
+        justify-content: space-around;
+        align-items: center;
+        height: 17vh;
+    }
+
+    .nav-links {
+        gap: 2rem;
+        list-style: none;
+        font-size: 1.5rem;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: rgb(181, 181, 181);
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .logo:hover {
+        cursor: default;
+    }
+
+    /* HAMBURGER MENU */
+    #hamburger-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        position: relative;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hamburger-icon span {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: fit-content;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-links a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .menu-links li {
+        list-style: none;
+    }
+
+    .menu-links.open {
+        max-height: 300px;
+    }
+
+    .hamburger-icon.open span:first-child {
+        transform: rotate(45deg) translate(10px, 5px);
+    }
+
+    .hamburger-icon.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-icon.open span:last-child {
+        transform: rotate(-45deg) translate(10px, -5px);
+    }
+
+    /* Media Query to Hide the Normal Nav Links on Mobile */
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+
+        #hamburger-nav {
+            display: block;
+        }
+    }
+</style>
+
+
+
 
 <!-- Profile Section -->
-<section id="profile" style="
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    height: 80vh;
-    flex-wrap: wrap;
-    padding: 4vh 0;
-    background-color: #f9f9f9; /* Slightly darker background for profile section */
-">
-    <div class="profile-container" style="display: flex; align-items: center;">
-        <img src="assets/photo.jpg" alt="Jogi Praveen" class="profile-img" style="
-            height: 400px;
-            width: 300px;
-            border-radius: 1rem;
-            object-fit: cover;
-            margin-right: 40px;
-        ">
-        <div class="profile-text" style="text-align: left;">
-            <p style="font-weight: 600;">Hello, I'm</p>
-            <h1 style="font-size: 2.5rem; font-weight: bold;">Jogi Praveen</h1>
-            <p style="font-size: 1.75rem; margin-bottom: 1rem; color: #444;">Junior AI Developer</p>
-            <div class="profile-buttons" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
-                <a href="https://drive.google.com/file/d/1GfFOKHGhuIZmpVRo7eOZeLo5-m1mHiso/view?usp=drive_link" class="btn" style="
-                    padding: 10px 20px;
-                    border: 2px solid #333; /* Dark border for contrast */
-                    background-color: #fff; /* White background for contrast */
-                    color: #333; /* Dark text color */
-                    border-radius: 50px;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    text-align: center;
-                    transition: all 0.3s ease;
-                ">Download CV</a>
-                <a href="#contact" class="btn primary-btn" style="
-                    padding: 10px 20px;
-                    background-color: #333;
-                    color: white;
-                    border-radius: 50px;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    text-align: center;
-                    transition: all 0.3s ease;
-                ">Contact Info</a>
+<section id="profile">
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="assets/photo.jpg" alt="Jogi Praveen">
+        </div>
+        <div class="profile-text">
+            <p>Hello, I'm</p>
+            <h1>Jogi Praveen</h1>
+            <p class="role">Junior AI Developer</p>
+            <div class="profile-buttons">
+                <a href="https://drive.google.com/file/d/1GfFOKHGhuIZmpVRo7eOZeLo5-m1mHiso/view?usp=drive_link" class="btn">Download CV</a>
+                <a href="#contact" class="btn primary-btn">Contact Info</a>
             </div>
-            <div class="social-icons" style="margin-top: 1rem; display: flex; gap: 1rem;">
-                <a href="https://linkedin.com/in/jogi-praveen-8a23b2238/" class="icon-link"><img src="assets/linkedin.png" alt="LinkedIn" class="icon"></a>
-                <a href="https://github.com/praveen9131" class="icon-link"><img src="assets/github.png" alt="GitHub" class="icon"></a>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/jogi-praveen-8a23b2238/"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/praveen9131"><img src="assets/github.png" alt="GitHub"></a>
             </div>
-            <div style="margin-top: 3rem;">
-                <a href="#contact" class="btn hire-me-btn" style="
-                    padding: 10px 20px;
-                    border: 2px solid #333;
-                    background-color: #000; /* Black background for Hire Me button */
-                    color: white;
-                    border-radius: 50px;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    text-align: center;
-                    display: inline-block;
-                    transition: all 0.3s ease;
-                    position: relative;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                ">
-                    Hire Me
-                    <span style="
-                        display: inline-block;
-                        margin-left: 100px;
-                        transition: transform 0.3s ease;
-                    ">&rarr;</span>
-                </a>
+            <div class="hire-me">
+                <a href="#contact" class="btn hire-me-btn">HIRE ME &rarr;</a>
             </div>
         </div>
     </div>
 </section>
 
-<script>
-    document.querySelector('.hire-me-btn').addEventListener('mouseenter', function() {
-        this.querySelector('span').style.transform = 'translateX(5px)';
-    });
 
-    document.querySelector('.hire-me-btn').addEventListener('mouseleave', function() {
-        this.querySelector('span').style.transform = 'translateX(0)';
-    });
-</script>
-
-<!-- About Me Section -->
-<section id="about" style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 4vh 0;
-    background-color: #f9f9f9;
-">
-    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Get To Know More</h2>
-    <div class="about-container" style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        margin: 0 auto;
-    ">
+    <!-- About Me Section -->
+<section id="about">
+    <h2 style="font-size: 30px;">Get To Know More</h2>
+    <h2 style="font-size: 30px;">About me</h2>
+    <div class="about-container">
         <!-- Profile Image -->
-        <div class="profile-image" style="flex: 1; text-align: center;">
-            <img src="assets/photo.jpg" alt="Jogi Praveen" style="
-                height: 300px;
-                width: 250px;
-                border-radius: 1rem;
-                object-fit: cover;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            ">
+        <div class="profile-image">
+            <img src="assets/photo.jpg" alt="Jogi Praveen">
         </div>
 
         <!-- Profile Details -->
-        <div class="profile-details" style="flex: 2; text-align: left;">
-            <h2 style="font-size: 2rem; color: #000;">Jogi Praveen</h2>
-            <div class="experience-education" style="
-                display: flex;
-                justify-content: space-between;
-                margin-top: 2rem;
-            ">
-                <div class="experience" style="
-                    padding: 1.5rem;
-                    background: white;
-                    border-radius: 1rem;
-                    border: #bbb 0.1rem solid; /* Lighter border */
-                    width: 45%;
-                ">
-                    <img src="assets/experience.png" alt="Experience" style="height: 50px; margin-bottom: -0.1rem;">
-                    <h3 style="font-size: 1.5rem; margin-bottom: 0.1rem;">Experience</h3>
-                    <p>2+ years <br />Artificial Intelligence Developer</p>
+        <div class="profile-details">
+            
+            <div class="experience-education">
+                <div class="experience">
+                    <img src="assets/experience.png" alt="Experience Icon" class="icon">
+                    <h4>Experience</h4>
+                    <p>2+ years<br />Artificial Intelligence Developer</p>
                 </div>
-                <div class="education" style="
-                    padding: 1.5rem;
-                    background: white;
-                    border-radius: 1rem;
-                    border: #bbb 0.1rem solid;
-                    width: 45%;
-                ">
-                    <img src="assets/education.png" alt="Education" style="height: 50px; margin-bottom: -0.1rem;">
-                    <h3 style="font-size: 1.5rem; margin-bottom: 0.1rem;">Education</h3>
+                <div class="education">
+                    <img src="assets/education.png" alt="Education Icon" class="icon">
+                    <h4>Education</h4>
                     <p>Bachelor of Technology<br />Artificial Intelligence and Data Science</p>
                 </div>
             </div>
-            <p style="
-                max-width: 800px;
-                margin-top: 2rem;
-                line-height: 1.6;
-            ">
-                Experienced Junior data scientist with a strong background in statistical analysis, machine learning, 
-                and data-driven decision-making. Proven track record of developing innovative solutions to complex 
-                business problems, utilizing advanced programming skills and expertise in data visualization.
-            </p>
+            <p>  Experienced Junior Data Scientist specializing in <strong>Generative AI</strong> and Artificial Intelligence. Equipped with a strong foundation in machine learning and data-driven decision-making, with a proven track record of developing innovative solutions to complex challenges. Served as an intern on numerous projects for startups, applying advanced programming techniques to deliver impactful results.</p>
         </div>
     </div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills" style="
-    padding: 4vh 0;
-    background-color: #ffffff;
-    text-align: center;
-">
-    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Explore My Skills</h2>
-    <div class="skills-container" style="
-        max-width: 1200px;
-        display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-        margin: 0 auto;
-    ">
-        <div class="skills-item" style="
-            width: 45%;
-            padding: 2rem;
-            background: white;
-            border-radius: 1rem;
-            border: #ccc 0.1rem solid; /* Neutral border color */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        ">
-            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Backend Development</h3>
-            <ul style="
-                padding-left: 0;
-                font-size: 1.2rem;
-                list-style: none;
-                margin: 0;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            ">
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+   <!-- Skills Section -->
+<section id="skills">
+    <h2 style="font-size: 30px;">Explore My Skills</h2>
+    <div class="skills-container">
+        <div class="skills-item">
+            <h3>Backend Development</h3>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>Python</strong><br>
-                        <span style="color: #666;">Experienced</span>
+                        <strong>Python</strong><br /><span>Experienced</span>
                     </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                </div>
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>MySQL</strong><br>
-                        <span style="color: #666;">Experienced</span>
+                        <strong>MySQL</strong><br /><span>Experienced</span>
                     </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                </div>
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>MongoDB</strong><br>
-                        <span style="color: #666;">Intermediate</span>
+                        <strong>MongoDB</strong><br /><span>Intermediate</span>
                     </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                </div>
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>Neo4j</strong><br>
-                        <span style="color: #666;">Experienced</span>
+                        <strong>Neo4j</strong><br /><span>Experienced</span>
                     </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                </div>
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>Machine Learning</strong><br>
-                        <span style="color: #666;">Experienced</span>
+                        <strong>Machine Learning</strong><br /><span>Experienced</span>
                     </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                </div>
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>Deep Learning</strong><br>
-                        <span style="color: #666;">Intermediate</span>
+                        <strong>Deep Learning</strong><br /><span>Intermediate</span>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
-        <div class="skills-item" style="
-            width: 45%;
-            padding: 2rem;
-            background: white;
-            border-radius: 1rem;
-            border: #ccc 0.1rem solid;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        ">
-            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">AI Development</h3>
-            <ul style="
-                padding-left: 0;
-                font-size: 1.2rem;
-                list-style: none;
-                margin: 0;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            ">
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+
+        <div class="skills-item">
+            <h3>AI Development</h3>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>Langchain</strong><br>
-                        <span style="color: #666;">Experienced</span>
+                        <strong>Langchain</strong><br /><span>Experienced</span>
                     </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                </div>
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>Llama Index</strong><br>
-                        <span style="color: #666;">Intermediate</span>
+                        <strong>Llama Index</strong><br /><span>Intermediate</span>
                     </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                </div>
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>OpenAI, Gemini</strong><br>
-                        <span style="color: #666;">Experienced</span>
+                        <strong>OpenAI, Gemini</strong><br /><span>Experienced</span>
                     </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                    <img src="assets/checkmark.png" alt="Checkmark" style="width: 45px; height: 45px; margin-right: 10px;">
+                </div>
+                <div class="skill">
+                    <img src="assets/checkmark.png" alt="Skill Icon" class="skill-icon">
                     <div>
-                        <strong>Git</strong><br>
-                        <span style="color: #666;">Experienced</span>
+                        <strong>Git</strong><br /><span>Experienced</span>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-
-<!-- Projects Section -->
-<section id="projects" style="
-    padding: 4vh 0;
-    background-color: #f9f9f9;
-    text-align: center;
-">
-    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Browse My Recent Projects</h2>
-    <div class="projects-container" style="
-        max-width: 1200px;
-        display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-        margin: 0 auto;
-    ">
-        <div class="project-item" style="
-            width: 30%;
-            padding: 20px;
-            background: white;
-            border-radius: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        ">
-            <img src="assets/questions.webp" alt="AI Questions Generation" style="
-                border-radius: 1rem;
-                max-width: 100%;
-                height: auto;
-                margin-bottom: 15px;
-            ">
-            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">AI Questions Generation</h3>
-            <a href="https://github.com/Praveen9131/AI_Questions_generation" class="btn">GitHub</a>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 style="font-size: 30px;">Browse My Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <img src="assets/questions.webp" alt="AI Questions Generation">
+                <h3>AI Questions Generation</h3>
+                <a href="https://github.com/Praveen9131/AI_Questions_generation" class="btn">GitHub</a>
+            </div>
+            <div class="project-item">
+                <img src="assets/chatbot.webp" alt="Chatbot Project">
+                <h3>Chatbot Project</h3>
+                <a href="https://github.com/Praveen9131/chatbot_02" class="btn">GitHub</a>
+            </div>
+            <div class="project-item">
+                <img src="assets/content.webp" alt="Content Generation">
+                <h3>Content Generation</h3>
+                <a href="https://github.com/Praveen9131/online_course_content_generation" class="btn">GitHub</a>
+            </div>
+            <div class="project-item">
+                <img src="assets/content.webp" alt="Content Generation">
+                <h3>Content Generation</h3>
+                <a href="#" class="btn">GitHub</a>
+            </div>
         </div>
-        <div class="project-item" style="
-            width: 30%;
-            padding: 20px;
-            background: white;
-            border-radius: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        ">
-            <img src="assets/chatbot.webp" alt="Chatbot Project" style="
-                border-radius: 1rem;
-                max-width: 100%;
-                height: auto;
-                margin-bottom: 15px;
-            ">
-            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Chatbot Project</h3>
-            <a href="https://github.com/Praveen9131/chatbot_02" class="btn">GitHub</a>
-        </div>
-        <div class="project-item" style="
-            width: 30%;
-            padding: 20px;
-            background: white;
-            border-radius: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        ">
-            <img src="assets/content.webp" alt="Content Generation" style="
-                border-radius: 1rem;
-                max-width: 100%;
-                height: auto;
-                margin-bottom: 15px;
-            ">
-            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Content Generation</h3>
-            <a href="https://github.com/Praveen9131/content-_generator" class="btn">GitHub</a>
-        </div>
-        <div class="project-item" style="
-        width: 30%;
-        padding: 20px;
-        background: white;
-        border-radius: 1rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    ">
-        <img src="assets/content.webp" alt="Content Generation" style="
-            border-radius: 1rem;
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 15px;
-        ">
-        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Content Generation</h3>
-        <a href="https://github.com/Praveen9131/content-_generator" class="btn">GitHub</a>
-    </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" style="
-    padding: 4vh 0;
-    background-color: #ffffff;
-    text-align: center;
-">
-    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">My Work Experience</h2>
-    <div class="experience-container" style="
-        max-width: 1200px;
-        display: flex;
-        gap: 2rem;
-        margin: 0 auto;
-        position: relative;
-        padding-top: 2rem;
-    ">
-        <div class="experience-left" style="
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        ">
-            <div class="experience-item" style="
-                padding: 2rem;
-                background: white;
-                border-radius: 2rem;
-                border: #ccc 0.1rem solid;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: left;
-            ">
-                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">Brainmeasures</h3>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 style="font-size: 30px;">My Work Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h1>Brainmeasures</h1>
                 <p>March 2024 – Present</p>
-                <h3 style="color: #000;"><strong>Role:</strong> AI Developer Intern</h3>
-                <ul style="
-                    padding-left: 20px;
-                    list-style-type: disc;
-                ">
+                <h3 style="color: #000;"><strong>Role:</strong> AI developer Intern</h3>                <ul>
                     <li>Developed AI applications using OpenAI and LangChain, enhancing educational services through automation.</li>
                     <li>Architected scalable content creation solutions using advanced language models.</li>
                 </ul>
             </div>
-            <div class="experience-item" style="
-                padding: 2rem;
-                background: white;
-                border-radius: 2rem;
-                border: #ccc 0.1rem solid;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: left;
-            ">
-                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">Zymbia Interactive Technologies</h3>
+            <div class="experience-item">
+                <h1>Zymbia Interactive Technologies</h1>
                 <p>February 2024</p>
-                <h3 style="color: black;"><strong>Role:</strong> Generative AI Intern</h3>
-                <ul style="
-                    padding-left: 20px;
-                    list-style-type: disc;
-                ">
+                <h3 style="color: #000;"><strong>Role:</strong> Generative AI Intern</h3>
+                <ul>
                     <li>Enhanced chatbot performance using OpenAI API and advanced prompting techniques.</li>
                     <li>Implemented an interactive chatbot interface using Streamlit.</li>
                 </ul>
             </div>
-            <div class="experience-item" style="
-                padding: 2rem;
-                background: white;
-                border-radius: 2rem;
-                border: #ccc 0.1rem solid;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: left;
-            ">
-                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">Nanak Delight</h3>
+            <div class="experience-item">
+                <h1>Nanak Delight</h1>
                 <p>October 2023 – December 2023</p>
-                <h3 style="color: black;"><strong>Role:</strong> Data Analyst Intern</h3>
-                <ul style="
-                    padding-left: 20px;
-                    list-style-type: disc;
-                ">
+                <h3 style="color: #000;"><strong>Role:</strong> Data Analyst Intern</h3>
+                <ul>
                     <li>Analyzed and managed datasets related to exports and imports, ensuring data accuracy.</li>
                     <li>Developed data analysis tools to extract meaningful insights for decision-making.</li>
                     <li>Optimized data workflows, improving efficiency by 60% in exports and imports operations.</li>
                 </ul>
             </div>
-        </div>
-        <div class="vertical-line" style="
-            width: 2px;
-            background-color: #ccc;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        "></div>
-        <div class="experience-right" style="
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        ">
-            <div class="experience-item" style="
-                padding: 2rem;
-                background: white;
-                border-radius: 2rem;
-                border: #ccc 0.1rem solid;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: left;
-            ">
-                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">United We Care</h3>
+            <div class="experience-item">
+                <h1>United We Care</h1>
                 <p>April 2024</p>
-                <h3 style="color: black;"><strong>Role:</strong> Data Science Intern</h3>
-                <ul style="
-                    padding-left: 20px;
-                    list-style-type: disc;
-                ">
+                <h3 style="color: #000;"><strong>Role:</strong> Data Science Intern</h3>
+                <ul>
                     <li>Optimized data integration solutions with Neo4j for health data applications.</li>
                     <li>Improved data processing efficiency using Docker workflows.</li>
                 </ul>
             </div>
-            <div class="experience-item" style="
-                padding: 2rem;
-                background: white;
-                border-radius: 2rem;
-                border: #ccc 0.1rem solid;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: left;
-            ">
-                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">WebMobi360</h3>
+            <div class="experience-item">
+                <h1>WebMobi360</h1>
                 <p>September 2023 – December 2023</p>
                 <h3 style="color: #000;"><strong>Role:</strong> Machine Learning Intern</h3>
-                <ul style="
-                    padding-left: 20px;
-                    list-style-type: disc;
-                ">
+                <ul>
                     <li>Developed a facial emotion recognition system using advanced computer vision techniques.</li>
                     <li>Created responsive software solutions to improve user interaction.</li>
                 </ul>
             </div>
-            <div class="experience-item" style="
-                padding: 2rem;
-                background: white;
-                border-radius: 2rem;
-                border: #ccc 0.1rem solid;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: left;
-            ">
-                <h3 style="font-size: 1.75rem; margin-bottom: 10px;">Reflexion.ai</h3>
+            <div class="experience-item">
+                <h1>Reflexion.ai</h1>
                 <p>September 2023 – December 2023</p>
-                <h3 style="color: black;"><strong>Role:</strong> Data Labelling Intern</h3>
-                <ul style="
-                    padding-left: 20px;
-                    list-style-type: disc;
-                ">
+                <h3 style="color: #000;"><strong>Role:</strong> Data Labelling Intern</h3>
+                <ul>
                     <li>Managed and curated labeled datasets for AI training, ensuring accuracy and consistency.</li>
                     <li>Developed an efficient data annotation tool, streamlining the data labeling process.</li>
                     <li>Optimized data annotation workflows, improving efficiency by 60%.</li>
-                    <li>Proficient in preprocessing and analyzing large-scale datasets for AI models.</li>
                 </ul>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact" style="
-    padding: 4vh 0;
-    background-color: #f9f9f9;
-    text-align: center;
-">
-    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Contact Me</h2>
-    <div class="contact-info-upper-container" style="
-        display: flex;
-        justify-content: center;
-        border-radius: 2rem;
-        border: #ccc 0.1rem solid;
-        background: #fefefe;
-        margin: 2rem auto;
-        padding: 0.5rem;
-        max-width: 1200px;
-    ">
-        <div class="contact-info-container" style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            margin: 1rem;
-        ">
-            <img src="assets/email.png" alt="Email" class="contact-icon" style="height: 2.5rem;">
-            <p><a href="mailto:jogipraveen9122@gmail.com">jogipraveen9122@gmail.com</a></p>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 style="font-size: 30px;">Contact Me</h2>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="Email" class="contact-icon">
+                <p><a href="mailto:jogipraveen9122@gmail.com">jogipraveen9122@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn" class="contact-icon">
+                <p><a href="https://www.linkedin.com/in/jogi-praveen-8a23b2238/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/dail_logo.jpg" alt="Phone" class="contact-icon">
+                <p><a href="tel:+919121564760">9121564760</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/whatsapp.png" alt="WhatsApp" class="contact-icon">
+                <p><a href="https://wa.me/919121564760">WhatsApp me</a></p>
+            </div>
         </div>
-        <div class="contact-info-container" style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            margin: 1rem;
-        ">
-            <img src="assets/linkedin.png" alt="LinkedIn" class="contact-icon" style="height: 2.5rem;">
-            <p><a href="https://www.linkedin.com/in/jogi-praveen-8a23b2238/">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container" style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            margin: 1rem;
-        ">
-            <img src="assets/dail_logo.jpg" alt="Phone" class="contact-icon" style="height: 2.5rem;">
-            <p><a href="tel:+919121564760">9121564760</a></p>
-        </div>
-        <div class="contact-info-container" style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            margin: 1rem;
-        ">
-            <img src="assets/whatsapp.png" alt="WhatsApp" class="contact-icon" style="height: 2.5rem;">
-            <p><a href="https://wa.me/919121564760">WhatsApp me</a></p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer style="
-    height: 26vh;
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-">
-    <nav>
-        <ul class="nav-links" style="
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            list-style: none;
-            font-size: 1.5rem;
-        ">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <p>Copyright &#169; 2024 Jogi Praveen. All Rights Reserved.</p>
-</footer>
+   
 
 </body>
 </html>
