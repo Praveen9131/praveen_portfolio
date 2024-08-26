@@ -206,7 +206,9 @@
             font-size: 1.5rem;
             font-weight: 500;
         }
-
+        .nav-links a hover {
+            color:chocolate;
+        }
         /* PROFILE SECTION */
         #profile {
             display: flex;
@@ -706,7 +708,7 @@
             <h1>Jogi Praveen</h1>
             <p class="role">Junior AI Developer</p>
             <div class="profile-buttons">
-                <a href="https://drive.google.com/file/d/1-40u5bb-bX26HZlNgS8VYTzPlZHZ8J_l/view?usp=sharing" class="btn">Download CV</a>
+                <a href="https://drive.google.com/file/d/1GfFOKHGhuIZmpVRo7eOZeLo5-m1mHiso/view?usp=drive_link" class="btn">Download CV</a>
                 <a href="#contact" class="btn primary-btn">Contact Info</a>
             </div>
             <div class="social-icons">
@@ -728,7 +730,7 @@
     <div class="about-container">
         <!-- Profile Image -->
         <div class="profile-image">
-            <!--<img src="assets/photo.jpg" alt="Jogi Praveen"> -->
+            <!--<img src="assets/photo.jpg" alt="Jogi Praveen">
         </div>
 
         <!-- Profile Details -->
@@ -847,7 +849,11 @@
                 <h3>Content Generation</h3>
                 <a href="https://github.com/Praveen9131/online_course_content_generation" class="btn">GitHub</a>
             </div>
-      
+            <div class="project-item">
+                <img src="assets/content.webp" alt="Content Generation">
+                <h3>Content Generation</h3>
+                <a href="#" class="btn">GitHub</a>
+            </div>
         </div>
     </section>
     <!-- Experience Section -->
@@ -935,8 +941,164 @@
         </div>
     </section>
 
-   <!-- Floating Chat Icon Section -->
+ <!-- Floating Chat Icon Section -->
+<!-- Floating Chat Icon Section -->
+<!-- Floating Chat Icon Section -->
+<!-- Floating Chat Icon Section -->
 <!-- <!-- Floating Chat Icon Section -->
+<section>
+    <div id="chat-icon" onclick="toggleChatWindow()">
+        <div class="chat-icon-container">
+            <span id="chat-text">Chat with Me</span>
+            <img src="assets/chat.png" alt="Chat Icon" id="chat-image">
+        </div>
+    </div>
+
+    <div id="chat-window">
+        <div id="chat-header">
+            <span>Chat with Us!</span>
+            <button onclick="toggleChatWindow()">✖</button>
+        </div>
+        <iframe src="https://resume-chatbot-fcq0.onrender.com/" frameborder="0" id="chat-iframe"></iframe>
+    </div>
+</section>
+
+<style>
+    /* Chat Icon Container */
+    .chat-icon-container {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+
+    /* Floating Chat Icon */
+    #chat-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        background-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    #chat-image {
+        width: 60px; /* Adjust size */
+        height: 60px; /* Adjust size */
+        background-color: transparent; /* Remove background color */
+        border-radius: 50%;
+    }
+
+    #chat-text {
+        position: absolute;
+        bottom: 100%; /* Position above the image */
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+        background: linear-gradient(to right, #c46009, #1e1204, #240a96, #baffc9, #076ab7);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: textBlink 1.5s infinite;
+    }
+
+    @keyframes textBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+
+    /* Hide text on mobile */
+    @media screen and (max-width: 767px) {
+        #chat-text {
+            display: none;
+        }
+    }
+
+    /* Chat Window */
+    #chat-window {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 350px;
+        height: 600px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        z-index: 1001;
+    }
+
+    /* Fullscreen on mobile */
+    @media screen and (max-width: 767px) {
+        #chat-window {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+
+        #chat-header {
+            border-radius: 0;
+        }
+    }
+
+    #chat-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    #chat-header button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #chat-window iframe {
+        width: 100%;
+        height: calc(100% - 40px);
+        border: none;
+    }
+</style>
+
+<script>
+    function toggleChatWindow() {
+        var chatWindow = document.getElementById('chat-window');
+        if (chatWindow.style.display === 'none' || chatWindow.style.display === '') {
+            chatWindow.style.display = 'flex';
+            scrollToBottom(); // Ensure scroll is at the bottom when the chat window is opened
+        } else {
+            chatWindow.style.display = 'none';
+        }
+    }
+
+    function scrollToBottom() {
+        var iframe = document.querySelector('#chat-window iframe');
+        if (iframe) {
+            var contentWindow = iframe.contentWindow;
+            if (contentWindow) {
+                var chatContent = contentWindow.document.body;
+                chatContent.scrollTop = chatContent.scrollHeight; // Scroll to the bottom
+            }
+        }
+    }
+
+    document.getElementById('chat-iframe').addEventListener('load', function () {
+        scrollToBottom(); // Scroll to the bottom when the iframe loads
+    });
+</script>
 
 </body>
 </html>
